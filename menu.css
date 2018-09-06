@@ -1,0 +1,81 @@
+body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.title-bar {
+	-webkit-app-region: drag;
+	margin: 0;
+	display: flex;
+	width: 100%;
+	height: 50px;
+}
+
+.app-name-container {
+	background-color: #1b1b1b;
+	color: #e46e00;
+	display: flex;
+	padding-left: 100px;
+	padding-top: 5px;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+}
+
+.window-controls-container {
+	background-color: #1b1b1b;
+	display: flex;
+	justify-content: flex-end;
+	align-items: top;
+}
+
+.minimize-button {
+	-webkit-app-region: no-drag;
+	background-color: #1b1b1b;
+	border: 1px solid #1b1b1b;
+	width: 40px;
+	height: 30px;
+	padding-bottom: 30px;
+}
+
+.minimize-button:hover {
+	background-color: #333333;
+}
+
+.min-max-button {
+	-webkit-app-region: no-drag;
+	background-color: #1b1b1b;
+	border: 1px solid #1b1b1b;
+	width: 40px;
+	height: 30px;
+	padding-bottom: 30px;
+}
+
+.min-max-button:hover {
+	background-color: #333333;
+}
+
+.close-button {
+	-webkit-app-region: no-drag;
+	background-color: #1b1b1b;
+	border: 1px solid #1b1b1b;
+	width: 40px;
+	height: 30px;
+	padding-bottom: 30px;
+}
+
+.close-button:hover {
+	background-color: #333333;
+}
+
+.btn.minimize-button:not(:disabled):not(.disabled):active,
+.btn.min-max-button:not(:disabled):not(.disabled):active,
+.btn.close-button:not(:disabled):not(.disabled):active,
+.btn.minimize-button:not(:disabled):not(.disabled).active,
+.btn.min-max-button:not(:disabled):not(.disabled).active,
+.btn.close-button:not(:disabled):not(.disabled).active {
+	background-color: #333333;
+	border: 1px solid #1b1b1b;
+	border-radius: 4px;
+}

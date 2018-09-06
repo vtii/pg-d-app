@@ -1,0 +1,193 @@
+body {
+	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+	background-color: #1b1b1b;
+}
+
+/* .maincont {
+	/* background-color: #1b1b1b;
+	/* background-image: linear-gradient(#1b1b1b, #223a16);
+} */
+
+.mainInner {
+	max-width: 800;
+	/* max-height: 820; */
+	padding-left: 30px;
+	/* padding-right: 80px;  */
+}
+
+hr {
+	width: 100%;
+	background-color: #8a8100;
+}
+
+textarea {
+	resize: none;
+	outline: none;
+	box-shadow: none;
+	background-color: #1b1b1b;
+}
+
+.row.bigL {
+	margin-top: 20px;
+}
+
+/* .row.bigL,
+.row.smallL,
+.row.numbers,
+.row.specialCharacters {
+	margin-top: 20px;
+} */
+
+/* - - - - - - - - - - - - - - - - - - - - -
+____    _   _   _____   _____    ___    _   _   ____
+| __ )  | | | | |_   _| |_   _|  / _ \  | \ | | / ___|
+|  _ \  | | | |   | |     | |   | | | | |  \| | \___ \
+| |_) | | |_| |   | |     | |   | |_| | | |\  |  ___) |
+|____/   \___/    |_|     |_|    \___/  |_| \_| |____/
+*/
+
+.btn.disabled,
+.btn:disabled {
+	opacity: 0.3;
+}
+
+.btn:focus,
+.btn.focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.btn.all1.opt,
+.btn.all2.opt {
+	margin-left: 30px;
+	margin-top: 25px;
+	width: 60px;
+}
+
+.btn.all3.opt {
+	margin-left: 30px;
+	width: 60px;
+}
+
+.btn.all4.opt {
+	margin-left: 30px;
+	margin-top: 48px;
+	width: 60px;
+}
+
+.btn.opt {
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	width: 38px;
+	height: 38px;
+	font-weight: 100;
+	color: #8a8100;
+	background-color: #223a16;
+	border: 1px solid #8a8100;
+	border-radius: 5px;
+}
+
+.btn.opt:hover {
+	color: yellowgreen;
+	background-color: #af3302;
+	border: 1px solid yellowgreen;
+	border-radius: 5px;
+}
+
+.btn:not(:disabled):not(.disabled):active,
+.btn:not(:disabled):not(.disabled).active {
+	color: #1b1b1b;
+	background-color: #e46e00;
+	border: 1px solid #8a8100;
+	border-radius: 5px;
+}
+
+.btn:not(:disabled):not(.disabled):active:hover,
+.btn:not(:disabled):not(.disabled).active:hover {
+	background-color: #af3302;
+}
+
+.btn.gen {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 200px;
+	height: 38px;
+	font-weight: 100;
+	color: #1b1b1b;
+	background-color: #e46e00;
+	border: 1px solid #8a8100;
+	border-radius: 5px;
+}
+
+.btn.gen:hover {
+	background-color: #af3302;
+	border: 1px solid yellowgreen;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - -
+____    _       ___   ____    _____   ____
+/ ___|  | |     |_ _| |  _ \  | ____| |  _ \
+\___ \  | |      | |  | | | | |  _|   | |_) |
+___) | | |___   | |  | |_| | | |___  |  _ <
+|____/  |_____| |___| |____/  |_____| |_| \_\
+*/
+.slidecontainer {
+	width: 100%;
+	border: red;
+	/* margin-left: -12px; */
+}
+
+.slider {
+	-webkit-appearance: none;
+	width: 80%;
+	height: 7px;
+	border-radius: 5px;
+	border-color: red;
+	background: #e46e00;
+	outline: none;
+	/* opacity: 0.5; */
+	box-shadow: none;
+	/* -webkit-transition: .2s;
+	transition: opacity .2s;
+	transition: box-shadow .2s; */
+	box-shadow: 0px 0px 0.5px 0.5px rgb(0, 0, 0);
+}
+
+.slider:hover {
+	/* opacity: 1; */
+	cursor: pointer;
+
+}
+
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #1b1b1b;
+	cursor: pointer;
+	box-shadow: 0px 0px 3px 2px #e46e00;
+}
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+#pwLengthText {
+	color: #8a8100;
+	margin-top: 10px;
+}
+
+#generatedPassword {
+	width: 900px;
+	height: 38px;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	border: 1px solid #8a8100;
+	color: #e46e00;
+	font-weight: 100;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */

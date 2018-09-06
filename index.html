@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="menu.css">
+
+	<title>Password Generator</title>
+	</head>
+	<body>
+
+		<div class="title-bar">
+				<div class="menu-button-container">
+					<!-- <button id="menu-button"class="menu-button"	></button> -->
+				</div>
+				<div class="app-name-container">
+					<p>Password Generator</p>
+				</div>
+				<div class="window-controls-container">
+					<button id="minimize-button"class="btn minimize-button"><i style="color:#e46e00;" class="fas fa-window-minimize"></i></button>
+					<button id="min-max-button"	class="btn min-max-button"><i style="color:#e46e00;" class="fas fa-window-maximize"></i></button>
+					<button id="close-button" class="btn close-button"><i style="color:#e46e00;" class="fas fa-window-close"></i></button>
+				</div>
+			</div>
+
+		<div class="col-12">
+
+			<div class="d-flex justify-content-center">
+				<div class="row bigL" style="width:800px">
+					<div class="col-2">
+						<button onclick="allBLettersButton(); itemClicked(this.id);" type="button" id="allBLetters" class="btn all1 opt" data-toggle="button" aria-pressed="false">
+								All
+						</button>
+					</div>
+					<div class="col-10">
+						<button onclick="removeActiveAllBLetters(); itemClicked(this.id);" type="button" id="bLeta" class="btn opt" data-toggle="button" aria-pressed="false">
+							A
+						</button>
+						<button onclick="removeActiveAllBLetters(); itemClicked(this.id);" type="button" id="bLetb" class="btn opt" data-toggle="button" aria-pressed="false">
+							B
+						</button>
+						<button onclick="removeActiveAllBLetters(); itemClicked(this.id);" type="button" id="bLetc" class="btn opt" data-toggle="button" aria-pressed="false">
+							C
+						</button>
+						<button onclick="removeActiveAllBLetters(); itemClicked(this.id);" type="button" id="bLetd" class="btn opt" data-toggle="button" aria-pressed="false">
+							D
+						</button>
+						<button onclick="removeActiveAllBLetters(); itemClicked(this.id);" type="button" id="bLete" class="btn opt" data-toggle="button" aria-pressed="false">
+							E
+						</button>
+						<button onclick="removeActiveAllBLetters(); itemClicked(this.id);" type="button" id="bLetf" class="btn opt" data-toggle="button" aria-pressed="false">
+							F
+						</button>
+						<button onclick="removeActiveAllBLetters(); itemClicked(this.id);" type="button" id="bLetg" class="btn opt" data-toggle="button" aria-pressed="false">
+							G
+						</button>
+						<button onclick="removeActiveAllBLetters(); itemClicked(this.id);" type="button" id="bLeth" class="btn opt" data-toggle="button" aria-pressed="false">
+							H
+						</button>
+						<button onclick="removeActiveAllBLetters(); itemClicked(this.id);" type="button" id="bLeti" class="btn opt" data-toggle="button" aria-pressed="false">
+							I
+						</button>
+						<button onclick="removeActiveAllBLetters(); itemClicked(this.id);" type="button" id="bLetj" class="btn opt" data-toggle="button" aria-pressed="false">
+							J
+						</button>
+						<button onclick="removeActiveAllBLetters(); itemClicked(this.id);" type="button" id="bLetk" class="btn opt" data-toggle="button" aria-pressed="false">
+							K
+						</button>
+						<button onclick="removeActiveAllBLetters(); itemClicked(this.id);" type="button" id="bLetl" class="btn opt" data-toggle="button" aria-pressed="false">
+							L
+						</button>
+						<button onclick="removeActiveAllBLetters(); itemClicked(this.id);" type="button" id="bLetm" class="btn opt" data-toggle="button" aria-pressed="false">
+							M
+						</button>
+						<button onclick="removeActiveAllBLetters(); itemClicked(this.id);" type="button" id="bLetn" class="btn opt" data-toggle="button" aria-pressed="false">
+							N
+						</button>
+						<button onclick="removeActiveAllBLetters(); itemClicked(this.id);" type="button" id="bLeto" class="btn opt" data-toggle="button" aria-pressed="false">
+							O
+						</button>
+						<button onclick="removeActiveAllBLetters(); itemClicked(this.id);" type="button" id="bLetp" class="btn opt" data-toggle="button" aria-pressed="false">
+							P
+						</button>
+						<button onclick="removeActiveAllBLetters(); itemClicked(this.id);" type="button" id="bLetq" class="btn opt" data-toggle="button" aria-pressed="false">
+							Q
+						</button>
+						<button onclick="removeActiveAllBLetters(); itemClicked(this.id);" type="button" id="bLetr" class="btn opt" data-toggle="button" aria-pressed="false">
+							R
+						</button>
+						<button onclick="removeActiveAllBLetters(); itemClicked(this.id);" type="button" id="bLets" class="btn opt" data-toggle="button" aria-pressed="false">
+							S
+						</button>
+						<button onclick="removeActiveAllBLetters(); itemClicked(this.id);" type="button" id="bLett" class="btn opt" data-toggle="button" aria-pressed="false">
+							T
+						</button>
+						<button onclick="removeActiveAllBLetters(); itemClicked(this.id);" type="button" id="bLetu" class="btn opt" data-toggle="button" aria-pressed="false">
+							U
+						</button>
+						<button onclick="removeActiveAllBLetters(); itemClicked(this.id);" type="button" id="bLetv" class="btn opt" data-toggle="button" aria-pressed="false">
+							V
+						</button>
+						<button onclick="removeActiveAllBLetters(); itemClicked(this.id);" type="button" id="bLetw" class="btn opt" data-toggle="button" aria-pressed="false">
+							W
+						</button>
+						<button onclick="removeActiveAllBLetters(); itemClicked(this.id);" type="button" id="bLetx" class="btn opt" data-toggle="button" aria-pressed="false">
+							X
+						</button>
+						<button onclick="removeActiveAllBLetters(); itemClicked(this.id);" type="button" id="bLety" class="btn opt" data-toggle="button" aria-pressed="false">
+							Y
+						</button>
+						<button onclick="removeActiveAllBLetters(); itemClicked(this.id);" type="button" id="bLetz" class="btn opt" data-toggle="button" aria-pressed="false">
+							Z
+						</button>
+					</div>
+					<hr>
+				</div>
+			</div>
+
+
+			<div class="d-flex justify-content-center">
+				<div class="row smallL" style="width:800px">
+					<div class="col-2">
+						<button onclick="allSLettersButton(); itemClicked(this.id);" type="button" id="allSLetters" class="btn all2 opt" data-toggle="button" aria-pressed="false">
+								All
+						</button>
+					</div>
+					<div class="col-10">
+						<button onclick="removeActiveAllSLetters(); itemClicked(this.id);" type="button" id="sLeta" class="btn opt" data-toggle="button" aria-pressed="false">
+							a
+						</button>
+						<button onclick="removeActiveAllSLetters(); itemClicked(this.id);" type="button" id="sLetb" class="btn opt" data-toggle="button" aria-pressed="false">
+							b
+						</button>
+						<button onclick="removeActiveAllSLetters(); itemClicked(this.id);" type="button" id="sLetc" class="btn opt" data-toggle="button" aria-pressed="false">
+							c
+						</button>
+						<button onclick="removeActiveAllSLetters(); itemClicked(this.id);" type="button" id="sLetd" class="btn opt" data-toggle="button" aria-pressed="false">
+							d
+						</button>
+						<button onclick="removeActiveAllSLetters(); itemClicked(this.id);" type="button" id="sLete" class="btn opt" data-toggle="button" aria-pressed="false">
+							e
+						</button>
+						<button onclick="removeActiveAllSLetters(); itemClicked(this.id);" type="button" id="sLetf" class="btn opt" data-toggle="button" aria-pressed="false">
+							f
+						</button>
+						<button onclick="removeActiveAllSLetters(); itemClicked(this.id);" type="button" id="sLetg" class="btn opt" data-toggle="button" aria-pressed="false">
+							g
+						</button>
+						<button onclick="removeActiveAllSLetters(); itemClicked(this.id);" type="button" id="sLeth" class="btn opt" data-toggle="button" aria-pressed="false">
+							h
+						</button>
+						<button onclick="removeActiveAllSLetters(); itemClicked(this.id);" type="button" id="sLeti" class="btn opt" data-toggle="button" aria-pressed="false">
+							i
+						</button>
+						<button onclick="removeActiveAllSLetters(); itemClicked(this.id);" type="button" id="sLetj" class="btn opt" data-toggle="button" aria-pressed="false">
+							j
+						</button>
+						<button onclick="removeActiveAllSLetters(); itemClicked(this.id);" type="button" id="sLetk" class="btn opt" data-toggle="button" aria-pressed="false">
+							k
+						</button>
+						<button onclick="removeActiveAllSLetters(); itemClicked(this.id);" type="button" id="sLetl" class="btn opt" data-toggle="button" aria-pressed="false">
+							l
+						</button>
+						<button onclick="removeActiveAllSLetters(); itemClicked(this.id);" type="button" id="sLetm" class="btn opt" data-toggle="button" aria-pressed="false">
+							m
+						</button>
+						<button onclick="removeActiveAllSLetters(); itemClicked(this.id);" type="button" id="sLetn" class="btn opt" data-toggle="button" aria-pressed="false">
+							n
+						</button>
+						<button onclick="removeActiveAllSLetters(); itemClicked(this.id);" type="button" id="sLeto" class="btn opt" data-toggle="button" aria-pressed="false">
+							o
+						</button>
+						<button onclick="removeActiveAllSLetters(); itemClicked(this.id);" type="button" id="sLetp" class="btn opt" data-toggle="button" aria-pressed="false">
+							p
+						</button>
+						<button onclick="removeActiveAllSLetters(); itemClicked(this.id);" type="button" id="sLetq" class="btn opt" data-toggle="button" aria-pressed="false">
+							q
+						</button>
+						<button onclick="removeActiveAllSLetters(); itemClicked(this.id);" type="button" id="sLetr" class="btn opt" data-toggle="button" aria-pressed="false">
+							r
+						</button>
+						<button onclick="removeActiveAllSLetters(); itemClicked(this.id);" type="button" id="sLets" class="btn opt" data-toggle="button" aria-pressed="false">
+							s
+						</button>
+						<button onclick="removeActiveAllSLetters(); itemClicked(this.id);" type="button" id="sLett" class="btn opt" data-toggle="button" aria-pressed="false">
+							t
+						</button>
+						<button onclick="removeActiveAllSLetters(); itemClicked(this.id);" type="button" id="sLetu" class="btn opt" data-toggle="button" aria-pressed="false">
+							u
+						</button>
+						<button onclick="removeActiveAllSLetters(); itemClicked(this.id);" type="button" id="sLetv" class="btn opt" data-toggle="button" aria-pressed="false">
+							v
+						</button>
+						<button onclick="removeActiveAllSLetters(); itemClicked(this.id);" type="button" id="sLetw" class="btn opt" data-toggle="button" aria-pressed="false">
+							w
+						</button>
+						<button onclick="removeActiveAllSLetters(); itemClicked(this.id);" type="button" id="sLetx" class="btn opt" data-toggle="button" aria-pressed="false">
+							x
+						</button>
+						<button onclick="removeActiveAllSLetters(); itemClicked(this.id);" type="button" id="sLety" class="btn opt" data-toggle="button" aria-pressed="false">
+							y
+						</button>
+						<button onclick="removeActiveAllSLetters(); itemClicked(this.id);" type="button" id="sLetz" class="btn opt" data-toggle="button" aria-pressed="false">
+							z
+						</button>
+					</div>
+					<hr>
+				</div>
+			</div>
+
+
+			<div class="d-flex justify-content-center">
+				<div class="row numbers" style="width:800px">
+					<div class="col-2">
+						<button onclick="allNumbersButton(); itemClicked(this.id);" type="button" id="allnum" class="btn all3 opt" data-toggle="button" aria-pressed="false">
+								All
+						</button>
+					</div>
+					<div class="col-10">
+						<button onclick="removeActiveAllNumbers(); itemClicked(this.id);" type="button" id="num0" class="btn opt" data-toggle="button" aria-pressed="false">
+							0
+						</button>
+						<button onclick="removeActiveAllNumbers(); itemClicked(this.id);" type="button" id="num1" class="btn opt" data-toggle="button" aria-pressed="false">
+							1
+						</button>
+						<button onclick="removeActiveAllNumbers(); itemClicked(this.id);" type="button" id="num2" class="btn opt" data-toggle="button" aria-pressed="false">
+							2
+						</button>
+						<button onclick="removeActiveAllNumbers(); itemClicked(this.id);" type="button" id="num3" class="btn opt" data-toggle="button" aria-pressed="false">
+							3
+						</button>
+						<button onclick="removeActiveAllNumbers(); itemClicked(this.id);" type="button" id="num4" class="btn opt" data-toggle="button" aria-pressed="false">
+							4
+						</button>
+						<button onclick="removeActiveAllNumbers(); itemClicked(this.id);" type="button" id="num5" class="btn opt" data-toggle="button" aria-pressed="false">
+							5
+						</button>
+						<button onclick="removeActiveAllNumbers(); itemClicked(this.id);" type="button" id="num6" class="btn opt" data-toggle="button" aria-pressed="false">
+							6
+						</button>
+						<button onclick="removeActiveAllNumbers(); itemClicked(this.id);" type="button" id="num7" class="btn opt" data-toggle="button" aria-pressed="false">
+							7
+						</button>
+						<button onclick="removeActiveAllNumbers(); itemClicked(this.id);" type="button" id="num8" class="btn opt" data-toggle="button" aria-pressed="false">
+							8
+						</button>
+						<button onclick="removeActiveAllNumbers(); itemClicked(this.id);" type="button" id="num9" class="btn opt" data-toggle="button" aria-pressed="false">
+							9
+						</button>
+					</div>
+					<hr>
+				</div>
+			</div>
+
+
+			<div class="d-flex justify-content-center">
+				<div class="row specialCharacters" style="width:800px">
+					<div class="col-2">
+						<button onclick="allSCButton(); itemClicked(this.id);" type="button" id="allSC" class="btn all4 opt" data-toggle="button" aria-pressed="false">
+								All
+						</button>
+					</div>
+					<div class="col-10">
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc1" class="btn opt" data-toggle="button" aria-pressed="false">
+
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc2" class="btn opt" data-toggle="button" aria-pressed="false">
+							!
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc3" class="btn opt" data-toggle="button" aria-pressed="false">
+							"
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc4" class="btn opt" data-toggle="button" aria-pressed="false">
+							#
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc5" class="btn opt" data-toggle="button" aria-pressed="false">
+							$
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc6" class="btn opt" data-toggle="button" aria-pressed="false">
+							%
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc7" class="btn opt" data-toggle="button" aria-pressed="false">
+							&
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc8" class="btn opt" data-toggle="button" aria-pressed="false">
+							'
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc9" class="btn opt" data-toggle="button" aria-pressed="false">
+							(
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc10" class="btn opt" data-toggle="button" aria-pressed="false">
+							)
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc11" class="btn opt" data-toggle="button" aria-pressed="false">
+							*
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc12" class="btn opt" data-toggle="button" aria-pressed="false">
+							+
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc13" class="btn opt" data-toggle="button" aria-pressed="false">
+							-
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc14" class="btn opt" data-toggle="button" aria-pressed="false">
+							,
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc15" class="btn opt" data-toggle="button" aria-pressed="false">
+							.
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc16" class="btn opt" data-toggle="button" aria-pressed="false">
+							/
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc17" class="btn opt" data-toggle="button" aria-pressed="false">
+							:
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc18" class="btn opt" data-toggle="button" aria-pressed="false">
+							;
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc19" class="btn opt" data-toggle="button" aria-pressed="false">
+							>
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc20" class="btn opt" data-toggle="button" aria-pressed="false">
+							=
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc21" class="btn opt" data-toggle="button" aria-pressed="false">
+							<
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc22" class="btn opt" data-toggle="button" aria-pressed="false">
+							?
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc23" class="btn opt" data-toggle="button" aria-pressed="false">
+							@
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc24" class="btn opt" data-toggle="button" aria-pressed="false">
+							[
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc25" class="btn opt" data-toggle="button" aria-pressed="false">
+							]
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc26" class="btn opt" data-toggle="button" aria-pressed="false">
+							\
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc27" class="btn opt" data-toggle="button" aria-pressed="false">
+							^
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc28" class="btn opt" data-toggle="button" aria-pressed="false">
+							_
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc29" class="btn opt" data-toggle="button" aria-pressed="false">
+							{
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc30" class="btn opt" data-toggle="button" aria-pressed="false">
+							|
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc31" class="btn opt" data-toggle="button" aria-pressed="false">
+							}
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc32" class="btn opt" data-toggle="button" aria-pressed="false">
+							`
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc33" class="btn opt" data-toggle="button" aria-pressed="false">
+							´
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc34" class="btn opt" data-toggle="button" aria-pressed="false">
+							~
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc35" class="btn opt" data-toggle="button" aria-pressed="false">
+							§
+						</button>
+						<button onclick="removeActiveAllSC(); itemClicked(this.id);" type="button" id="sc36" class="btn opt" data-toggle="button" aria-pressed="false">
+							°
+						</button>
+					</div>
+					<hr>
+				</div>
+			</div>
+
+
+			<div class="d-flex justify-content-center">
+				<div class="slidecontainer text-center" style="width:800px">
+					<input type="range" min="4" max="48" value="16" class="slider" id="slider">
+					<p id="pwLengthText">Password length: <span id="pwLength"></span></p>
+					<hr>
+				</div>
+			</div>
+
+
+			<div class="d-flex justify-content-center">
+				<div class="row">
+					<div>
+						<button onclick="gen();" type="button" class="btn gen">Generate Password!</button>
+						<!-- <button disabled id="copyBtn" type="button" class="btn gen" onclick="copyPass()">Copy</button> -->
+						<button disabled id="copyBtn" type="button" class="btn gen" onclick="copyPass('#generatedPassword')">Copy</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="d-flex justify-content-center">
+				<div class="row">
+					<textarea readonly id="generatedPassword">< < < Your password will apear here > > ></textarea>
+				</div>
+			</div>
+		</div>
+
+		<!-- fontawesome.js first, then jQuery, then Popper.js, then Bootstrap JS -->
+
+		<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+		<!-- JavaScript -->
+		<script src="script.js"></script>
+		<script>
+		// You can also require other files to run in this process
+		require('./renderer.js')
+		</script>
+	</body>
+</html>
