@@ -32,16 +32,12 @@ function shuffle(array) {
 	return array;
 }
 
-// function copyPass() {
-// 	generatedPassword.select();
-// 	document.execCommand("copy");
-// }
-
 // function for copy to clipboard
-function copyPass(element) {
-	const $temp = $("<input>");
-	$("body").append($temp);
-	$temp.val($(element).text()).select();
+function copyPass() {
+	const $temp = document.createElement("input");
+	document.body.appendChild($temp);
+	$temp.value = generatedPassword.value;
+	$temp.select();
 	document.execCommand("copy");
 	$temp.remove();
 }

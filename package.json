@@ -1,5 +1,5 @@
 {
-  "name": "first-electron-app",
+  "name": "pg-d-app",
   "version": "1.0.0",
   "description": "testing electron",
   "main": "main.js",
@@ -13,7 +13,7 @@
     "tutorial",
     "demo"
   ],
-  "devDependencies": {
+  "dependencies": {
     "electron": "^2.0.0"
   }
 }
